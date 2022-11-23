@@ -1,12 +1,10 @@
 from word_list import word_list
 import random
 
+# From the Word list getting a random word
 word = random.choice(word_list)
 
-
-
-# hello 
-
+# This Function is used to get the Structure of the hangman according to the life count
 def Structure(life):
     stages =[
                 # platfrom, pole, horizontal bar, rope, head, torso, both arms and both legs
@@ -131,6 +129,7 @@ def Structure(life):
 def game():
     life = 0
     difficulty = int(input("1. Easy (10 lives)\n2. Medium (6 lives)\n3. Hard (4 lives)\n Enter difficulty: "))
+    # Setting the difficulty level
     if difficulty == 1:
         life = 10
     elif difficulty == 2:
