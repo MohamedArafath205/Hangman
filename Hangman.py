@@ -4,6 +4,9 @@ import random
 word = random.choice(word_list)
 
 
+
+# hello 
+
 def Structure(life):
     stages =[
                 # platfrom, pole, horizontal bar, rope, head, torso, both arms and both legs
